@@ -1,0 +1,427 @@
+	/*-------------------------------------------------------Page index-----------------------------------------------------------------*/
+
+.fond-index{					/*met une image de fond pour page index*/
+	background: url(../img/fe.jpg) no-repeat;
+	margin:0;
+  	padding:0;
+  	background-size: cover;
+  	cursor: url(../img/curseur.png), auto ;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+#contenu{
+	min-height: 100%;
+	position: relative;
+}
+
+.logoalignage{				/*aligne les logos au centre pour la page index et la premiere de football*/
+	text-align: center;
+}
+
+.video{						/*aligne la video sur coté droit avec espace de 20px sur coté droit, modifie taille et supprime toutes les bordures*/
+	float: right;
+	width:560px;
+	height:315px;
+	margin-right: 20px;
+	border:0;
+	border-radius: 30px;
+}
+
+.texte-intro{				/*paragraphe d'intro*/
+ 	padding : 1em; 			/* texte ne touche pas la bordure.*/
+  							/*boîte soit carrée pour obtenir un cercle bien rond*/
+  	width  : 20em;
+  	height : 20em;					
+  	border-radius: 100%;	/*transforme carré en cercle */
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	background: midnightblue;
+  	opacity: 0.5;
+  	font-weight: bold;
+  	position: relative;
+	text-align: center;
+	color: aqua;
+}
+
+footer{
+	background: silver;
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	opacity: 0.8;
+}
+
+.footer{
+	position: relative;
+	text-align: center;
+	color: #162288;
+	opacity: 1;
+	font-weight: bold;
+}
+
+
+
+.font-taupe{					/*modifie la couleur en gris taupe pour personnages, 19 communes internes et monuments*/
+	background-color: #b9c0cd;
+	cursor: url(../img/curseur.png), auto ;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+	/*----------------------------------Page histoire et monument-------------------------------------------------------*/
+
+.titrescommunesetmonuments{ /*alignement titres des pages communes, monuments et et histoire et formulaire et personnages*/
+	color: #FF5B2B;
+	text-align: center;
+	text-decoration: underline;
+}
+
+button[type=submit]{			/*bouton pour en savoir plus*/
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	background: #D8C8C4;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.colornomsmonperso{			/*noms des monuments et personnages*/
+	color: #FF8C00;
+	margin-left: 5px;
+}
+
+.video2{					/*video histoire bxl*/
+	width:560px;
+	height:315px;
+	border:0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+}
+
+.video3{					/*video auvio*/
+	width:540px;
+	height:360px;
+	border:0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+}
+
+.miseenplacetableau{		/*creation tableau des informations comm et hist*/
+	border-collapse: collapse;
+	background-color: #b9c0cd; 
+	margin: 0 auto;
+	border: 1px solid black;
+	width: 50%;
+}
+
+.bordure{					/*mise en place bordures internes pour tableau d'informations comm et hist*/
+	border: 1px solid black;
+	width: 50%;
+}
+
+	/*-------------------------------------------Page Communes----------------------------------------------------------*/
+
+.fond-commune{					/*met une image de fond pour la premiere page des communes*/
+	background: url(../img/fe2.jpg) no-repeat;
+	margin:0;
+  	padding:0;
+  	background-size: cover;
+  	cursor: url(../img/curseur.png), auto ;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.hauteurligne{				/*hauteur entre les lignes pour les paragraphes entre des pages des differentes communes*/
+	line-height:30px;
+}
+
+.centrageimg{				/*centrage des images de titres des communes, monuments et personnages et l'image de palmares*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+														
+.legendecommunes{					/*Legende en dessous de la carte commune centré gras couleur blanche*/
+font-weight: bold;
+color: white;
+text-align: center;
+}
+
+.marquee{					/*espacement entre les images qui défile en dessous de la carte*/
+	margin-right: 20px;
+}
+
+.slider1{							
+	width: 500px;
+	height: 300px;
+	overflow: hidden;
+	margin: 150px auto;
+}
+
+.slides{					/*animation du genre PowerPoint*/
+	width: calc(500px*3);
+	animation: glisse 10s infinite;
+}
+
+.slide{					/*images slide vers le coté gauche*/	
+	float: left;
+}
+
+@keyframes glisse{
+	0% {
+		transform: translateX(0);
+	}
+
+	10% {
+		transform: translateX(0);
+	}
+
+	33% {
+		transform: translateX(-500px);
+	}
+
+	43% {
+		transform: translateX(-500px);
+	}
+
+	66% {
+		transform: translateX(-1000px);
+	}
+
+	76% {
+		transform: translateX(-1000px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+
+
+.font-mauve{					/*modifie la couleur en mauve pour la partie football*/
+	background-color: #B845DA;
+  	cursor: url(../img/curseur2.png), auto ;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+	/*------------------------------------------------------Page joueurs------------------------------------------------------------*/
+
+.hr-mauve{							/*les hr au dessus et en dessous des sous titres de joueurs*/
+	height: 3px;
+	background-color: #E29BF7;
+	border: none;
+}							
+
+.soustitre{							/*sous-titres joueurs aligné au centre*/
+	text-align: center;
+	color: #DF85FF
+}
+
+figcaption{						/*centre noms joueurs*/
+	text-align: center;
+}
+
+.coupe{								/*redimenssionner images des coupes*/
+	width: 30px;
+	height: 30px;
+}
+	
+.titre-jou{						/*alignement du titre pour la page des joueurs et club et palmares*/
+	text-align: center;
+}
+
+
+.imgcompclubhistoire1{			/*met les images de club en décalant la marche de gauche*/
+	margin-left: 5px;
+}
+
+.imgcompclubhistoire2{			/*met les images du club a droite en reculant de la marge de droite*/
+	float: right;
+	margin-right: 5px;
+}
+
+/*-----------------------------------------------------------Page palmares------------------------------------------------------*/																	
+#palmares{
+    border: 2px solid #ad90a3;
+    margin-right: 10%;
+    margin-left: 10%; 
+    margin-bottom: 10%;
+}
+
+.tournoi{
+    background: rgba(74,74,74,0.5);
+    text-align: center;
+    color: #e05cb6;
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 1%;
+}
+
+.annee{
+    background: rgba(255,255,255,0.5);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 0.5%;
+    color: #e84a89;
+}
+
+
+	/*----------------------------------------------Formulaire--------------------------------------------------------------------------*/
+
+.env{						/*travail sur le bouton d'envoi*/
+	background-color:blue; 
+	color: white;
+	border-radius: 20px;
+	border-style: solid;
+	font-size: 20px;
+	text-align: center;
+	width: 130px;
+	margin-left: 50%;
+	border: 0;
+}
+
+.champsform{			/*champs formulaire*/
+	display: block;
+	width: 165px;
+	float: left;
+}
+
+legend{					/*mettre les intitulé des champs en gras*/
+		font-weight: bold;
+
+}
+
+.taillefieldset{
+border:solid 1px black; 
+padding:15px; 
+width:360px; 
+color:midnightblue;
+margin-right: auto;
+margin-left: auto;
+}
+
+
+
+	/*------------------------------------------------------Fléche remonter-----------------------------------------------------------*/
+
+.remonter{					/*fleche remonter*/
+	float: right;
+	margin-right: 5px;
+	width: 50px;
+	height: 50px;
+}
+
+
+
+
+
+
+
+/*----------------------------------MEDIA QUERIES------------------------------------------------------*/
+
+@media screen and (max-width: 780px){
+
+/*---------------------------------------------------------------Page index---------------------------*/
+.texte-intro{
+	color: white;  	
+  	width  : 18em;					
+}
+
+.video{
+	width:300px;
+	height:220px;
+	display: block;
+	margin-right: 10px;
+	border-radius: 15px;
+}
+
+footer{
+	height: 40px;
+}
+
+
+	/*----------------------------------------------------------Page histoire et monuments------------------------*/
+.titrescommunesetmonuments{
+	font-size: 20px;
+}
+
+.colornomsmonperso{
+	font-size: 18px;
+}
+
+.video2{
+	width:300px;
+	height:150px;
+	border-radius: 15px;
+}
+
+.video3{
+	width:300px;
+	height:200px;
+}
+
+
+	/*-------------------------------------------------Page commune------------------------------------------*/
+.hauteurligne{
+	line-height: 20px;
+}
+
+.slider1{
+	width: 300px;
+	height: 195px;
+}
+
+
+	/*------------------------------------------Page foot-------------------------------------------------------------*/
+.imgfootalaligne{
+		display: inline-block;
+		margin-right: 1px;
+}
+
+.imgcompclubhistoire1{
+	width: 100px;
+}
+
+.imgcompclubhistoire2{
+	width: 90px;
+}
+
+.tournoi{
+    font-size: 18px;
+}
+
+.annee{
+    font-size: 15px;
+}
+
+/*----------------------------------------------Fléche remonter------------------------------------------------------*/
+.remonter{
+	width: 30px;
+	height: 30px;
+}
+
+.remonter2{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50px;
+}
+
+/*-----------------------------------------Formulaire------------------------------------------------------*/
+.taillefieldset{
+	width: 250px;
+}
+
+
+}

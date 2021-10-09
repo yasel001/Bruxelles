@@ -1,0 +1,200 @@
+																				/*MENU DEROULANT*/
+body{
+		margin: 0px;
+}
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Enleve puces des li */
+
+nav li{
+	list-style-type: none;
+}
+
+/*Met les menus  cote qa cote */
+
+nav > ul > li{
+	float: left;
+	position:relative;
+}
+
+/*Cache les sous menus*/
+
+.submenu{
+	display: none;
+}
+
+/*Cacher le check */
+
+nav input[type=checkbox]{
+	display: none;
+}
+
+/*Cacher le label*/
+
+nav label{
+	display: none;
+}
+
+/*Le menu prend toute la largeur et couleur arriere*/
+
+nav{
+	width: 100%;
+	background-color: navy;
+	padding: 0px;
+}
+
+/*Hack CSS pour parent flottant possede element non flotant*/
+
+nav > ul::after{
+	content: "";
+	display:table;
+	clear: both;
+}
+
+/*Mise en forme des liens */
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+/*Modifier la couleur des liens et alignage*/
+
+nav > ul > li > a{
+	padding: 10px 20px;
+	color: #77B5FE;
+}
+
+/*Affichage sous menu lors du passage de la souris*/
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+
+.submenu li a{
+	padding: 5px 20px;
+	font-size: 13px;
+	color: #222538;
+	width: 270px;
+}
+
+.menu-accueil:hover{
+	border-top: 5px solid cornflowerblue;
+	background-color: black;
+}
+
+.menu-monuments:hover{
+	border-top: 5px solid cornflowerblue;
+	background-color: black ;
+}
+
+.menu-perso:hover{
+	border-top: 5px solid cornflowerblue;
+	background-color: black ;
+}
+
+.menu-comm:hover{
+	border-top: 5px solid cornflowerblue;
+	background-color: black ;
+}
+
+.menu-histoire:hover{
+	border-top: 5px solid cornflowerblue;
+	background-color: black ;
+}
+
+.menu-foot:hover{
+	border-top: 5px solid cornflowerblue;
+	background-color: black ;
+}
+
+.menu-jeu:hover{
+	border-top: 5px solid cornflowerblue;
+	background-color: black ;
+}
+
+.menu-formulaire:hover{
+	border-top: 5px solid cornflowerblue;
+	background-color: black ;
+}
+
+.menu-contact:hover{
+	border-top: 5px solid cornflowerblue;
+	background-color: black ;
+}
+
+
+/*Bordure des menus principâux ne bouge pas*/
+
+nav > ul > li:hover a {
+	padding: 10px 20px 5px 20px;
+}
+
+/*Ligne entre les sous menus*/
+
+.submenu li{
+	border-bottom: 1px solid #CCC;
+}
+
+/*Couleur de fond des Sous menu*/
+
+.menu-foot .submenu{
+	background-color: #00BFFF;
+}
+
+/*Modifier apparence des sous menus au passage de la souris*/
+
+.submenu li:hover a{
+	color: #EEE;
+	font-weight: bold;
+}
+
+/*Couleur de selection des sous menus changen*/
+
+.menu-foot .submenu li:hover{
+	background-color: #6495ED ;
+}
+
+/*Display block lorsque menu est coché */
+
+nav input[type=checkbox]:checked ~ ul{
+	display: block;
+}
+
+@media screen and (max-width: 780px){ 
+
+.menu-mob{
+	display: block;
+	color: #FFF;
+	background-color: green;
+	text-align: center;
+	padding: 12px 0px;
+}
+
+nav ul{
+	display: none;
+}
+
+nav ul li, nav ul li a{
+	width: 100%;
+	text-align: center;
+}
+
+nav ul li a, nav ul li:hover a{
+	padding: 10px 0px;
+}
+
+nav li:hover .submenu{
+	display: block;
+	position: static;
+}
+
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="img/bxl.png" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/menuderoulant.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<script type="text/javascript">
+		function hello()
+		{
+			alert("Inscription enregistré");
+		}
+
+	</script>
+
+</head>
+<body class="font-taupe">
+	<nav>
+		<label for="mobile" class="menu-mob">Menu</label>
+		<input type="checkbox" id="mobile" role="button">
+		<ul>
+			<li class="menu-accueil"><a href="index.html">ACCUEIL</a></li>
+			<li class="menu-histoire"><a href="histoire.html">L'HISTOIRE DE BRUXELLES</a></li>
+			<li class="menu-monuments"><a href="monument.html">MONUMENTS</a></li>
+			<li class="menu-perso"><a href="personnages.html">PERSONNAGES</a></li>
+			<li class="menu-comm"><a href="communes.html">COMMUNES</a></li>
+			<li class="menu-foot"><a href="#">FOOTBALL</a>
+				<ul class="submenu">
+					<li><a href="club.html">LE CLUB</a></li>
+					<li><a href="joueurs.html">JOUEURS</a></li>
+					<li><a href="palmares.html">PALMARES</a></li>
+				</ul>
+			</li>
+			<li class="menu-jeu"><a href="jeu/quizzbxl.zip">Un petit jeu ? </a></li>
+			<li class="menu-formulaire"><a href="formulaire.html">Pas encore inscrit ?  </a></li>
+			<li class="menu-contact"><a href="mailto:yassine.ig19-20@gmail.com">CONTACT</a></li>
+		</ul>
+	</nav>
+
+	<h2 class="titrescommunesetmonuments">INSCRIPTION A LA NEWSLETTER</h2>
+	<form method="POST" action="traitement.php">
+
+		<fieldset class="taillefieldset">
+			<legend> Contact </legend>
+
+			<label for="nom" class="champsform">Nom: </label>
+			<input type="text" name="nom" placeholder="Indiquer votre nom" id="nom">
+			<br/><br/>
+			<label for="prenom" class="champsform">Prénom: </label>
+			<input type="text" name="prenom" placeholder="Indiquer votre prénom" id="prenom">
+			<br/><br/>
+			<label for="mail" class="champsform">Mail: </label>
+			<input type="email" name="mail" placeholder="Indiquer votre adresse mail" id="mail">
+			<br/><br/>
+		</fieldset>
+		<br/>
+		<fieldset class="taillefieldset">
+			<legend> Informations personnelles </legend>
+
+			<label for="MDP" class="champsform">Mot de passe: </label>
+			<input type="password" name="MDP" id="MDP">
+			<br/><br/>
+			<label for="MDP2" class="champsform">confirmation du mot de passe: </label>
+			<input type="password" name="MDP" id="MDP2">
+			<br/><br/><br/>
+			<label for="lg" class="champsform" >Langue:</label>
+			<select name="lg" id="lg">
+				<option value="BE">Français</option>
+				<option value="NL">Néerlandais</option>
+				<option value="EN">Anglais</option>
+			</select>
+			<br/><br>
+
+		</fieldset><br><br>
+
+		<input class="env" type="button" name="Envoyer" value="Envoyer" onclick="hello()" /><br><br>
+	</form>
+
+
+</body>
+</html>
